@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box rotetion</title>
+
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: relative;
+            margin: 50px auto;
+            transform: rotate(0deg);
+            transition-property: transform;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+
+
+        }
+        .container:hover{
+            transform: rotate(360deg);
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .itme1{
+            background-color: aqua;
+            top: 0px;
+            left: 0px;
+            border-top-right-radius: 150px ;
+            border-bottom-left-radius: 150px ;
+        }
+        .itme2{
+            background-color: rgb(28, 225, 107);
+            bottom: 0px;
+            right: 0px;
+            border-top-right-radius: 150px ;
+            border-bottom-left-radius: 150px ;
+        }
+        .itme3{
+            background-color: rgb(243, 83, 181);
+            top: 0px;
+            right: 0px;
+            border-top-left-radius: 150px ;
+            border-bottom-right-radius: 150px ;
+            
+        }
+        .itme4{
+            background-color: rgb(254, 228, 83);
+            bottom: 0px;
+            left: 0px;
+            border-top-left-radius: 150px ;
+            border-bottom-right-radius: 150px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box itme1"></div>
+        <div class="box itme2"></div>
+        <div class="box itme3"></div>
+        <div class="box itme4"></div>
+       
+    </div>
+</body>
+</html>
